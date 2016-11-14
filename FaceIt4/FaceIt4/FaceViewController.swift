@@ -10,12 +10,18 @@ import UIKit
 
 class FaceViewController: UIViewController {
     
+    
+    
+    // mark : Model
     var expression = FacialExpression(eyes: .Open, eyeBrows: .Relaxed, mouth: .Smirk) {
         didSet {
             updateUI()
         }
     }
     
+    
+    
+    // mark : View
     @IBOutlet weak var faceView: FaceView! {
         didSet
         {
@@ -48,6 +54,9 @@ class FaceViewController: UIViewController {
     }
     
     
+    
+    // mark : Gesture Handlers
+    
     func increaseHappiness() {
         expression.mouth = expression.mouth.happierMouth()
     }
@@ -61,6 +70,8 @@ class FaceViewController: UIViewController {
     private var eyeBrowTilts = [FacialExpression.EyeBrows.Relaxed:0.5, .Furrowed: -0.5, .Normal: 0.0]
     
     private func updateUI() {
+        if faceView != nil {
+            
         switch expression.eyes {
         case .Open: faceView.eyesOpen = true
         case .Closed: faceView.eyesOpen = false
@@ -68,49 +79,7 @@ class FaceViewController: UIViewController {
         }
         faceView.mouthCurvature = mouthCurvatures[expression.mouth] ?? 0.0
         faceView.eyeBrowTilt = eyeBrowTilts[expression.eyeBrows] ?? 0.0
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

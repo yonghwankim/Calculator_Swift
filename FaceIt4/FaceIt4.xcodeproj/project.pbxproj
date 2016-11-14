@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10D616C1DD995A7004A7CDF /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D616B1DD995A7004A7CDF /* EmotionsViewController.swift */; };
 		E11E3F6F1DD4173900D96B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E3F6E1DD4173900D96B91 /* AppDelegate.swift */; };
 		E11E3F711DD4173900D96B91 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E3F701DD4173900D96B91 /* FaceViewController.swift */; };
 		E11E3F741DD4173900D96B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11E3F721DD4173900D96B91 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E10D616B1DD995A7004A7CDF /* EmotionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
 		E11E3F6B1DD4173900D96B91 /* FaceIt4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11E3F6E1DD4173900D96B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E11E3F701DD4173900D96B91 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				E11E3F801DD4174200D96B91 /* Resources */,
 				E11E3F701DD4173900D96B91 /* FaceViewController.swift */,
 				E11E3F721DD4173900D96B91 /* Main.storyboard */,
+				E10D616B1DD995A7004A7CDF /* EmotionsViewController.swift */,
 				E11E3F811DD4178200D96B91 /* FaceView.swift */,
 				E11E3F831DD4434600D96B91 /* FacialExpression.swift */,
 			);
@@ -153,6 +156,7 @@
 			files = (
 				E11E3F711DD4173900D96B91 /* FaceViewController.swift in Sources */,
 				E11E3F841DD4434600D96B91 /* FacialExpression.swift in Sources */,
+				E10D616C1DD995A7004A7CDF /* EmotionsViewController.swift in Sources */,
 				E11E3F6F1DD4173900D96B91 /* AppDelegate.swift in Sources */,
 				E11E3F821DD4178200D96B91 /* FaceView.swift in Sources */,
 			);
@@ -318,6 +322,7 @@
 				E11E3F7F1DD4173900D96B91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
